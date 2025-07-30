@@ -49,7 +49,7 @@ public class Scanner01 {
 //        System.out.print("올해는 몇년도인가요? >>> ");
 //        int year = scanner.nextInt();
 //
-//        scanner.nextLine();     // 배리어 역할을 하는 nextLint()
+//        scanner.nextLine();     // 배리어 역할을 하는 nextLine()
 //        // 얘는 사용되지 않을거니까 변수에 대입하지 않았습니다.
 //
 //        System.out.print("당신의 이름은? >>> ");
