@@ -1,15 +1,54 @@
 package ch08_methods;
 
 import java.util.Scanner;
-
 /*
     별찍기 관련한 부분 메서드화 시키기
  */
 public class Method02 {
     // call4() 유형으로 작성 왜냐 -> 몇 줄 짜리인지 / 어떤 유형의 별찍기인지를 main에서 받을 예정이기 때문에
     public static String getStar(int rows, int option){
-        String result = "임시";
+        // 메서드 내에서만 사용하는 지역 변수 선언 및 초기화
+        String result = "";
         // 별찍기 관련 로직
+        // 주의할 점 sout이 아니라 return 타입이 고정되어있다는 점
+        // 이 때문에 별찍기 로직을 그대로 가져와도 sout에서 출력해서는 안됨.
+        if (option == 1){
+            for(int i=0; i<rows+1; i++){
+                for(int j=0; j<i; j++){
+                    result += "*";
+                }
+                result += "\n";
+            }
+        } else if (option == 2){    // 오른쪽으로 치우친 별
+            for(int i=0; i<rows; i++){
+                for(int k=0; k<rows - (i+1); k++){
+                    result += " ";
+                }
+                for(int j=0; j<i + 1; j++){
+                    result += "*";
+                }
+                result += "\n";
+            }
+        } else if (option == 3){    // 왼쪽으로 치우친 감소하는 별
+            for(int i=0; i<rows; i++){
+                for(int j=rows; j>i; j--){
+                    result += "*";
+                }
+                result += "\n";
+            }
+        } else if (option == 4){    // 오른쪽으로 치우친 감소하는 별
+            for(int i=0; i<rows; i++){
+                for(int k=0; k< i + 1; k++){
+                    result += " ";
+                }
+                for(int j=rows; j>i; j--){
+                    result += "*";
+                }
+                result += "\n";
+            }
+        } else {
+            result = "해당 기능이 없습니다.";
+        }
 
         return result;
     }
