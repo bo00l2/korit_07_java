@@ -2,8 +2,8 @@ package ch18_static.singleton.products;
 
 public class ProductViewMain {
     public static void main(String[] args) {
-        ProductView.getInstance();
-        ProductView.getInstance();
+        ProductView.getInstance();  // 첫번째 객체 생성
+        ProductView.getInstance();  //
         ProductView.getInstance();
         ProductView.getInstance();
         ProductView.getInstance();

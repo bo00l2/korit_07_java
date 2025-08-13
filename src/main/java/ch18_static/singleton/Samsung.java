@@ -12,7 +12,7 @@ public class Samsung {
     // 일반 필드(멤버 변수라는 표현을 쓰기도 함)
     @Getter             // getCompany()만 만들겠다는 의미
     private String company;
-    private int serialNumber;
+    private int serialNumber;   // serialNumber는 Getter 적용 안된다는 건가요?
 
     // private으로 NoArgsConstructor 정의
     private Samsung() {
