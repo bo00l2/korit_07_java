@@ -12,13 +12,14 @@ public class FieldTrip {
 
         List<String> fieldTrips = new ArrayList<>();
         Set<String> fieldTripSet = new HashSet<>();
-        String trip = "";
+//        String trip = ""; // 최종 작성 결과 얘는 fieldTrips list의 맨마지막 element와 동일한 값을 가지게 됨.
         for (int i=0; i<num; i++){
             System.out.print((i+1) + " 번 학생의 수학 여행지를 입력하세요 >>> ");
-            trip = scanner.next();
+            String trip = scanner.next();
             fieldTrips.add(trip);
         }
 
+        System.out.println();
         for(int i=0; i<fieldTrips.size(); i++){
             System.out.println((i+1) + " 번 학생의 후보자 : " + fieldTrips.get(i));    // 입력한 정보 조회
         }
@@ -28,7 +29,11 @@ public class FieldTrip {
         newfieldTrip.addAll(fieldTripSet);
 
         System.out.println( "수학 여행 후보지는");
-        System.out.println(newfieldTrip);
+//        System.out.println(newfieldTrip);
+        // 강사 풀이
+        for ( String trips : newfieldTrip){
+            System.out.println(trips);
+        }
         System.out.println("입니다.");
         /*
             1. 학생의 수를 입력 받아 해당 횟수만큼 반복문을 돌릴 것.
