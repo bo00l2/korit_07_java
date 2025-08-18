@@ -33,6 +33,7 @@ public class JSON1 {
             pretty printing이라는 표현을 씁니다.
             이걸 외부에서 지원하는 방식을 수업합니다.
          */
+
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         // jsonObject1을 PrettyPrinting이 적용된 JSON 문자열 형태로 변환
         String jsonData = gson.toJson(jsonObject1);
