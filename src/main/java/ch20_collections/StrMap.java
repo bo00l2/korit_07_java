@@ -95,8 +95,8 @@ public class StrMap {
             않기 때문에 Set으로 바꾸는 게 가능한 반면,
             복수의 Key에서 동일한 value가 존재할 수 있기 때문에 직접적으로 Set으로 바꾸지 않습니다.
          */
-        Collection<String> values = strMap1.values();
-        System.out.println(values);
+//        Collection<String> values = strMap1.values();
+//        System.out.println(values);
         // 저희 Collection 자료형은 처음 써보았습니다.
         // .sort()는
         // Collections이니까요.

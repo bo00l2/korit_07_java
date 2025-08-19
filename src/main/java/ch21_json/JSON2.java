@@ -120,5 +120,6 @@ public class JSON2 {
         System.out.println(jsonObject1);
         JsonObject jsonObject2 = gsonBuilder.fromJson(jsonUser1, JsonObject.class);
         System.out.println(jsonObject2);
+
     }
 }
